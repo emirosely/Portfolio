@@ -1,19 +1,61 @@
+:root {
+  --primary-color: #f7f7f2;
+  --secondary-color: #3e432e;
+  --heading-font-family: "Libre Baskerville", serif;
+  --default-font-family: "Lato", sans-serif;
+}
+
 body {
-  margin: 50px auto;
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  color: var(--secondary-color);
+  font-weight: bold;
+  line-height: 1.5em;
 }
 
 h1 {
-  text-align: center;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-size: 3em;
-  line-height: 1.5em;
+  font-size: 96px;
 }
 
 p {
-  text-align: center;
-  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: var(--secondary-color);
   line-height: 1.5em;
+}
+
+.hero {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: #3e432e;
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
