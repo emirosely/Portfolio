@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #f7f7f2;
-  --secondary-color: #3e432e;
+  --background-color: rgba(26, 47, 0, 0.05);
+  --primary-color: #018181;
   --heading-font-family: "Libre Baskerville", serif;
   --default-font-family: "Lato", sans-serif;
 }
@@ -11,51 +11,100 @@ body {
 
 h1,
 h2,
-h3,
+h3 {
+  font-family: var(--heading-font-family);
+  color: black;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font-family);
-  color: var(--secondary-color);
-  font-weight: bold;
-  line-height: 1.5em;
+  color: #000000b2;
+  font-family: var(--default-font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 96px;
 }
 
+h4 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
 p {
   font-weight: 400;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   line-height: 1.5em;
 }
 
 .hero {
-  background-color: var(--primary-color);
-  text-align: center;
-  padding: 160px 20px;
+  background-color: var(--background-color);
 }
 
-.hero p {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
+.logo {
+  max-width: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
-.hero h2 {
-  font-family: var(--default-font-family);
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 2;
+.container {
+  padding: 150px 50px;
+  text-align: left;
+  max-width: 1000px;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 30px;
+  max-width: 420px;
+  margin-left: 50px;
+  margin-top: -70px;
 }
 
 .btn-branding {
-  background: #3e432e;
+  position: relative;
+  z-index: 1;
+  background: var(--primary-color);
   border-radius: 5px;
-  color: var(--primary-color);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-right: 50px;
+  margin-top: -30px;
+  float: right;
+}
+
+.name {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  padding: 100px 50px;
+  z-index: -1;
+}
+
+.btn-branding:hover {
+  background-color: black;
+  color: white;
+}
+
+.portfolio {
+  margin: 150px;
+}
+
+.project-thumbnail {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
