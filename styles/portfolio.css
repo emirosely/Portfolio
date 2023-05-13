@@ -71,26 +71,21 @@ p {
   margin-left: 50px;
 }
 
-.container {
+.nameplate {
   padding: 150px 50px;
-  text-align: left;
   max-width: 1000px;
-  display: block;
+  margin: 0 auto;
 }
 
 .title {
-  position: absolute;
-  z-index: 1;
   background-color: white;
   padding: 30px;
-  max-width: 420px;
   margin-left: 50px;
-  margin-top: -70px;
+  margin-bottom: -40px;
+  text-align: left;
 }
 
 .btn-branding {
-  position: relative;
-  z-index: 1;
   background: var(--primary-color);
   border-radius: 5px;
   color: white;
@@ -113,7 +108,6 @@ p {
   box-sizing: border-box;
   border: 2px solid #000000;
   padding: 100px 50px;
-  z-index: -1;
 }
 
 .portfolio {
@@ -122,12 +116,6 @@ p {
 
 .project {
   margin-bottom: 100px;
-}
-
-.project-thumbnail {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
 }
 
 .body-link {
@@ -202,4 +190,196 @@ p {
 
 hr {
   border: 1px solid #000000;
+}
+
+@media (max-width: 350px) {
+  .nameplate {
+    padding: 75px 50px !important;
+  }
+
+  .name {
+    padding: 50px 50px !important;
+  }
+
+  .title {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1 !important;
+    position: relative !important;
+    padding: 20px 10px !important;
+  }
+
+  .btn-branding {
+    text-align: center !important;
+    float: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .portfolio {
+    margin: 75px 60px !important;
+  }
+
+  h1 {
+    text-align: center !important;
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+
+  h2 {
+    font-size: 40px !important;
+    line-height: 55px !important;
+  }
+
+  h3 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  h4 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .footer {
+    padding: 50px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+  .social-icon-group {
+    justify-content: center !important;
+    margin: 20px 0px !important;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 351px) {
+  .nameplate {
+    padding: 75px 50px !important;
+  }
+
+  .name {
+    padding: 50px 50px !important;
+  }
+
+  .title {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 250px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1 !important;
+    position: relative !important;
+    padding: 20px 10px !important;
+  }
+
+  .btn-branding {
+    text-align: center !important;
+    float: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .portfolio {
+    margin: 75px 60px !important;
+  }
+
+  h1 {
+    text-align: center !important;
+    font-size: 55px !important;
+    line-height: 65px !important;
+  }
+
+  h2 {
+    font-size: 40px !important;
+    line-height: 55px !important;
+  }
+
+  h3 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  h4 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .footer {
+    padding: 50px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+  .social-icon-group {
+    justify-content: center !important;
+    margin: 20px 0px !important;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 481px) {
+  h1 {
+    font-size: 70px !important;
+    line-height: 70px !important;
+  }
+
+  h2 {
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+
+  h3 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+    line-height: 30px !important;
+  }
+
+  .nameplate {
+    padding: 75px 50px !important;
+  }
+
+  .name {
+    padding: 75px 50px !important;
+  }
+  .title {
+    padding: 20px !important;
+    margin-bottom: -30px !important;
+  }
+  .btn-branding {
+    font-size: 16px !important;
+  }
+
+  .portfolio {
+    margin: 75px 60px !important;
+  }
+
+  .footer {
+    padding: 50px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+  .social-icon-group {
+    justify-content: center !important;
+    margin: 20px 0px !important;
+  }
 }
