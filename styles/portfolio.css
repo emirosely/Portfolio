@@ -3,6 +3,7 @@
   --primary-color: #018181;
   --heading-font-family: "Libre Baskerville", serif;
   --default-font-family: "Lato", sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 10px;
 }
 
 body {
@@ -30,6 +31,17 @@ h6 {
 
 h1 {
   font-size: 96px;
+  line-height: 115px;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 60px;
 }
 
 h4 {
@@ -37,11 +49,16 @@ h4 {
   line-height: 35px;
 }
 
+h5 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 p {
   font-weight: 400;
   font-size: 16px;
-  color: var(--primary-color);
-  line-height: 1.5em;
+  color: black;
+  line-height: 30px;
 }
 
 .hero {
@@ -87,6 +104,11 @@ p {
   float: right;
 }
 
+.btn-branding:hover {
+  background-color: black;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
 .name {
   box-sizing: border-box;
   border: 2px solid #000000;
@@ -94,17 +116,90 @@ p {
   z-index: -1;
 }
 
-.btn-branding:hover {
-  background-color: black;
-  color: white;
+.portfolio {
+  margin: 150px 100px;
 }
 
-.portfolio {
-  margin: 150px;
+.project {
+  margin-bottom: 100px;
 }
 
 .project-thumbnail {
   width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover;
+}
+
+.body-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.body-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.body-button {
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 30px;
+  border: 1px solid var(--primary-color);
+}
+
+.body-button:hover {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.footer {
+  background-color: var(--background-color);
+  padding: 100px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.social-icon-group {
+  gap: 10px;
+}
+
+.social-icon {
+  flex-basis: 50px;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.footer img:hover {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  box-shadow: var(--box-shadow);
+}
+
+.copyright {
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #000000;
 }
