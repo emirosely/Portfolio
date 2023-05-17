@@ -83,6 +83,8 @@ p {
   margin-left: 50px;
   margin-bottom: -40px;
   text-align: left;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-branding {
@@ -104,6 +106,13 @@ p {
   color: white;
   box-shadow: var(--box-shadow);
 }
+
+.btn-branding:active {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
 .name {
   box-sizing: border-box;
   border: 2px solid #000000;
