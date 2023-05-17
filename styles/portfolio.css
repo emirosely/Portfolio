@@ -1,9 +1,14 @@
+/* MAIN */
+
 :root {
   --background-color: rgba(26, 47, 0, 0.05);
   --primary-color: #018181;
   --heading-font-family: "Libre Baskerville", serif;
   --default-font-family: "Lato", sans-serif;
   --box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 10px;
+  --margin-top: 100px;
+  --margin-vertical: 100px 0px;
+  --margin-horizontal: 0px 100px;
 }
 
 body {
@@ -61,80 +66,8 @@ p {
   line-height: 30px;
 }
 
-.hero {
-  background-color: var(--background-color);
-}
-
-.logo {
-  max-width: 100px;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.nameplate {
-  padding: 150px 50px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.title {
-  background-color: white;
-  padding: 30px;
-  margin-left: 50px;
-  margin-bottom: -40px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-branding {
-  background: var(--primary-color);
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 20px 30px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-right: 50px;
-  margin-top: -30px;
-  float: right;
-}
-
-.btn-branding:hover {
-  background-color: black;
-  color: white;
-  box-shadow: var(--box-shadow);
-}
-
-.btn-branding:active {
-  background-color: white !important;
-  color: black !important;
-  box-shadow: var(--box-shadow) !important;
-}
-
-.name {
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  padding: 100px 50px;
-}
-
-.portfolio {
-  margin: 150px 100px;
-}
-
-.project {
-  margin-bottom: 100px;
-}
-
-.body-link {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.body-link:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
+hr {
+  border: 1px solid #000000;
 }
 
 .body-button {
@@ -156,6 +89,123 @@ p {
   box-shadow: var(--box-shadow);
 }
 
+.body-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.body-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-right: 50px;
+  margin-top: -30px;
+  float: right;
+}
+
+.btn-branding:active {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
+.btn-branding:hover {
+  background-color: black;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.header {
+  margin-top: var(--margin-top);
+}
+
+.logo {
+  max-width: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.page-content {
+  margin: var(--margin-horizontal);
+}
+
+/* HOME */
+.hero {
+  background-color: var(--background-color);
+}
+
+.nameplate {
+  padding: 100px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  background-color: white;
+  padding: 30px;
+  margin-left: 50px;
+  margin-bottom: -40px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.name {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  padding: 100px 50px;
+}
+
+.project {
+  margin: var(--margin-vertical);
+}
+
+/* ABOUT */
+
+.header h1 {
+  text-align: center;
+}
+
+.hidden-image img {
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ig-grid {
+  margin-bottom: 100px;
+}
+
+.img-container {
+  max-height: 400px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest h2 {
+  text-align: center;
+}
+
+/* FOOTER */
+.copyright {
+  text-align: center;
+}
+
 .footer {
   background-color: var(--background-color);
   padding: 100px;
@@ -171,14 +221,6 @@ p {
   text-decoration: underline;
 }
 
-.social-icon-group {
-  gap: 10px;
-}
-
-.social-icon {
-  flex-basis: 50px;
-}
-
 .footer img {
   max-width: 100%;
   height: auto;
@@ -187,20 +229,18 @@ p {
 }
 
 .footer img:hover {
-  max-width: 100%;
-  height: auto;
-  max-height: 50px;
   box-shadow: var(--box-shadow);
 }
 
-.copyright {
-  text-align: center;
+.social-icon-group {
+  gap: 10px;
 }
 
-hr {
-  border: 1px solid #000000;
+.social-icon {
+  flex-basis: 50px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 350px) {
   .nameplate {
     padding: 75px 50px !important;
@@ -234,7 +274,7 @@ hr {
     line-height: 20px !important;
   }
 
-  .portfolio {
+  .page-content {
     margin: 75px 60px !important;
   }
 
@@ -304,7 +344,7 @@ hr {
     line-height: 20px !important;
   }
 
-  .portfolio {
+  .page-content {
     margin: 75px 60px !important;
   }
 
@@ -378,7 +418,7 @@ hr {
     font-size: 16px !important;
   }
 
-  .portfolio {
+  .page-content {
     margin: 75px 60px !important;
   }
 
