@@ -201,9 +201,19 @@ hr {
   text-align: center;
 }
 
-/* ABOUT */
+/* WORK */
 
 .coming-soon {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  margin: var(--margin-vertical);
+  padding: 50px;
+  text-align: center;
+}
+
+/* CONTACT */
+
+.contact-border {
   box-sizing: border-box;
   border: 2px solid #000000;
   margin: var(--margin-vertical);
