@@ -9,6 +9,7 @@
   --margin-top: 100px;
   --margin-vertical: 100px 0px;
   --margin-horizontal: 0px 100px;
+  --transition: all 100ms ease-in-out;
 }
 
 body {
@@ -77,6 +78,7 @@ hr {
   line-height: 20px;
   padding: 20px 30px;
   border: 1px solid var(--primary-color);
+  transition: var(--transition);
 }
 
 .body-button:hover {
@@ -92,6 +94,7 @@ hr {
 .body-link {
   color: var(--primary-color);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .body-link:hover {
@@ -149,7 +152,7 @@ nav a {
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 100ms ease-in-out;
+  transition: var(--transition);
   display: inline;
   list-style: none;
 }
@@ -267,30 +270,32 @@ nav a.active {
   text-align: center;
 }
 
-.footer {
+footer {
   background-color: var(--background-color);
   padding: 100px;
 }
 
-.footer a {
+footer a {
   color: black;
   text-decoration: none;
+  transition: var(--transition);
 }
 
-.footer a:hover {
+footer a:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
 
-.footer img {
+footer img {
   max-width: 100%;
   height: auto;
   max-height: 50px;
   border-radius: 50%;
 }
 
-.footer img:hover {
+footer img:hover {
   box-shadow: var(--box-shadow);
+  transition: var(--transition);
 }
 
 .social-icon-group {
@@ -367,7 +372,7 @@ nav a.active {
     padding-right: 25px !important;
   }
 
-  .footer {
+  footer {
     padding: 50px !important;
     text-align: center !important;
     display: block !important;
@@ -443,7 +448,7 @@ nav a.active {
     padding-right: 25px !important;
   }
 
-  .footer {
+  footer {
     padding: 50px !important;
     text-align: center !important;
     display: block !important;
@@ -492,7 +497,7 @@ nav a.active {
     margin: 75px 60px !important;
   }
 
-  .footer {
+  footer {
     padding: 50px !important;
     text-align: center !important;
     display: block !important;
