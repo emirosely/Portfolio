@@ -129,14 +129,55 @@ hr {
   margin-top: var(--margin-top);
 }
 
-.logo {
-  max-width: 100px;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
 .page-content {
   margin: var(--margin-horizontal);
+}
+
+/* NAVBAR */
+nav {
+  padding-top: 50px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+nav a {
+  color: #000000b2;
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 100ms ease-in-out;
+  display: inline;
+  list-style: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.nav-home {
+  background-color: var(--background-color) !important;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav a {
+  padding: 5px 30px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 /* HOME */
@@ -145,7 +186,7 @@ hr {
 }
 
 .nameplate {
-  padding: 100px 50px;
+  padding: 50px 50px 100px 50px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -262,8 +303,8 @@ hr {
 
 /* RESPONSIVE */
 @media (max-width: 350px) {
-  .nameplate {
-    padding: 75px 50px !important;
+  .logo {
+    max-width: 75px;
   }
 
   .name {
@@ -320,6 +361,12 @@ hr {
     line-height: 20px !important;
   }
 
+  nav {
+    padding-top: 25px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
   .footer {
     padding: 50px !important;
     text-align: center !important;
@@ -332,8 +379,8 @@ hr {
 }
 
 @media (max-width: 480px) and (min-width: 351px) {
-  .nameplate {
-    padding: 75px 50px !important;
+  .logo {
+    max-width: 75px;
   }
 
   .name {
@@ -390,6 +437,12 @@ hr {
     line-height: 20px !important;
   }
 
+  nav {
+    padding-top: 25px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
   .footer {
     padding: 50px !important;
     text-align: center !important;
@@ -423,13 +476,10 @@ hr {
     line-height: 30px !important;
   }
 
-  .nameplate {
-    padding: 75px 50px !important;
-  }
-
   .name {
     padding: 75px 50px !important;
   }
+
   .title {
     padding: 20px !important;
     margin-bottom: -30px !important;
