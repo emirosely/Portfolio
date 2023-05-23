@@ -253,6 +253,11 @@ nav a.active {
   text-align: center;
 }
 
+.work img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
 /* CONTACT */
 
 .contact-border {
@@ -384,6 +389,11 @@ footer img:hover {
     justify-content: center !important;
     margin: 20px 0px !important;
   }
+
+  .work img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 351px) {
@@ -464,6 +474,11 @@ footer img:hover {
     justify-content: center !important;
     margin: 20px 0px !important;
   }
+
+  .work img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 800px) and (min-width: 481px) {
@@ -510,5 +525,10 @@ footer img:hover {
   .social-icon-group {
     justify-content: center !important;
     margin: 20px 0px !important;
+  }
+
+  .work img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
   }
 }
