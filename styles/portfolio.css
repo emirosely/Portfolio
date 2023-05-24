@@ -260,46 +260,12 @@ nav a.active {
 
 /* CONTACT */
 
-form {
-  transition: all 4s ease-in-out;
-}
-
-form .submit {
-  border-radius: 5px;
-  color: var(--primary-color);
-  font-size: 16px;
-  line-height: 20px;
-  padding: 20px 30px;
-  border: 1px solid var(--primary-color);
-  transition: var(--transition);
-  max-width: 150px;
-}
-
-form .submit:hover {
-  background: var(--primary-color);
-  border-radius: 5px;
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 20px 30px;
-  box-shadow: var(--box-shadow);
-  cursor: pointer;
-}
-
 .contact-form {
   box-sizing: border-box;
   border: 2px solid #000000;
   padding: 25px;
   text-align: center;
   margin-bottom: 100px;
-}
-
-.form-control {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid black;
-  color: black;
-  border-radius: 0px;
 }
 
 /* FOOTER */
