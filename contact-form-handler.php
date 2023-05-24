@@ -1,23 +1,20 @@
 <?php
-    $name = $_Post['name'];
-    $visitor_email = $_POST['email'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $email_from = 'hello@emilyrosescott.com';
-
-    $email_subject = "New Form Submission";
-
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                        "User Message: $message.\n";
-
     $to = "hello@emilyrosescott.com";
+    $subject = "New Form Submission";
 
-    $headers = "From: $email_from \r\n";
-
-    $headers .= "Reply-To: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact.html");
+    $txt ="Name = ". $name . "\r\n  Email = "
+    . $email . "\r\n Message =" . $message;
+ 
+    $headers = "From: noreply@demosite.com" . "\r\n" .
+            "CC: somebodyelse@example.com";
+    if($email != NULL) {
+        mail($to, $subject, $txt, $headers);
+    }
+ 
+// Redirect to
+header("Location:index.html");
 ?>

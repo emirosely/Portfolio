@@ -80,21 +80,22 @@
           <form
             id="contact-form"
             method="post"
-            action="/contact-form-handler.php"
+            action="contact-form-handler.php"
           >
             <input
-              name="name"
               type="text"
               class="form-control"
               placeholder="Name"
+              name="name"
+              value=""
               required
             />
             <br />
             <input
-              name="email"
               type="email"
               class="form-control"
               placeholder="Email"
+              name="email"
               required
             />
             <br />
@@ -106,7 +107,7 @@
               required
             ></textarea>
             <br />
-            <input type="submit" class="form-control submit" value="SEND" />
+            <button class="body-button" type="submit" value="SEND">SEND</button>
           </form>
         </div>
       </div>
