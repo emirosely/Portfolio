@@ -55,36 +55,60 @@
       <h1>Get in Touch!</h1>
     </div>
     <div class="page-content">
-      <div class="row text-center contact-border">
-        <p>
-          I’d love to collaborate with you on your next project! <br />
-          Please reach out via one of the below and we’ll take it from there.
-        </p>
-        <p>
-          <strong>Email</strong> <br /><a
-            href="mailto:hello@emilyrosescott.com"
-            class="body-link"
-            >hello@emilyrosescott.com</a
+      <div class="row d-flex mt-5">
+        <div class="col-lg-4">
+          <p>
+            I’d love to collaborate with you on your next project! Please reach
+            out via the form or one of the below and we'll take it from there.
+          </p>
+          <p>
+            Email:
+            <a href="mailto:hello@emilyrosescott.com" class="body-link"
+              >hello@emilyrosescott.com</a
+            >
+            <br />
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/emily-r-scott-07019373/"
+              target="_blank"
+              class="body-link"
+              >Emily R. Scott</a
+            >
+          </p>
+        </div>
+        <div class="contact-form col-lg-6 offset-lg-2">
+          <form
+            id="contact-form"
+            method="post"
+            action="contact-form-handler.php"
           >
-        </p>
-        <p>
-          <strong>Instagram</strong> <br />
-          <a
-            href="https://www.instagram.com/emirosely/"
-            target="_blank"
-            class="body-link"
-            >@emirosely</a
-          >
-        </p>
-        <p>
-          <strong>LinkedIn</strong> <br />
-          <a
-            href="https://www.linkedin.com/in/emily-r-scott-07019373/"
-            target="_blank"
-            class="body-link"
-            >Emily R. Scott</a
-          >
-        </p>
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+            <br />
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Type your message here"
+              rows="4"
+              required
+            ></textarea>
+            <br />
+            <input type="submit" class="form-control submit" value="SEND" />
+          </form>
+        </div>
       </div>
     </div>
     <footer>
