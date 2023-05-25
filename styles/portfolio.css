@@ -272,19 +272,6 @@ nav a.active {
   margin-right: auto;
 }
 
-.formFooter,
-.formFooter-wrapper {
-  opacity: 0 !important;
-}
-
-.form-all {
-  box-shadow: none !important;
-}
-
-.formFooter-heightMask {
-  opacity: 0 !important;
-}
-
 /* FOOTER */
 .copyright {
   text-align: center;
