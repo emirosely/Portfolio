@@ -60,15 +60,15 @@ h5 {
   line-height: 30px;
 }
 
+hr {
+  border: 1px solid #000000;
+}
+
 p {
   font-weight: 400;
   font-size: 16px;
   color: black;
   line-height: 30px;
-}
-
-hr {
-  border: 1px solid #000000;
 }
 
 .body-button {
@@ -188,10 +188,25 @@ nav a.active {
   background-color: var(--background-color);
 }
 
+.name {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  padding: 100px 50px;
+}
+
 .nameplate {
   padding: 50px 50px 100px 50px;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.project {
+  margin: var(--margin-vertical);
+}
+
+.project img {
+  aspect-ratio: 5/4;
+  object-fit: cover;
 }
 
 .title {
@@ -202,21 +217,6 @@ nav a.active {
   text-align: left;
   text-decoration: none;
   display: inline-block;
-}
-
-.name {
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  padding: 100px 50px;
-}
-
-.project {
-  margin: var(--margin-vertical);
-}
-
-.project img {
-  aspect-ratio: 5/4;
-  object-fit: cover;
 }
 
 /* ABOUT */
@@ -273,9 +273,6 @@ nav a.active {
 }
 
 /* FOOTER */
-.copyright {
-  text-align: center;
-}
 
 footer {
   background-color: var(--background-color);
@@ -305,6 +302,10 @@ footer img:hover {
   transition: var(--transition);
 }
 
+.copyright {
+  text-align: center;
+}
+
 .social-icon-group {
   gap: 10px;
   display: flex;
@@ -316,40 +317,13 @@ footer img:hover {
 
 /* RESPONSIVE */
 @media (max-width: 350px) {
-  .logo {
-    max-width: 75px;
-  }
-
-  .name {
-    padding: 50px 50px !important;
-  }
-
-  .title {
+  footer {
+    padding: 50px !important;
     text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    max-width: 200px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    z-index: 1 !important;
-    position: relative !important;
-    padding: 20px 10px !important;
   }
 
-  .btn-branding {
-    text-align: center !important;
-    float: none !important;
-    display: flex !important;
-    justify-content: center !important;
-    max-width: 200px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    font-size: 14px !important;
-    line-height: 20px !important;
-  }
-
-  .page-content {
-    margin: 75px 60px !important;
+  footer .d-flex {
+    display: block !important;
   }
 
   h1 {
@@ -380,47 +354,6 @@ footer img:hover {
     padding-right: 25px !important;
   }
 
-  footer {
-    padding: 50px !important;
-    text-align: center !important;
-  }
-
-  footer .d-flex {
-    display: block !important;
-  }
-
-  .social-icon-group {
-    justify-content: center !important;
-    margin: 20px 0px !important;
-  }
-
-  .work img {
-    aspect-ratio: 4/3;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 480px) and (min-width: 351px) {
-  .logo {
-    max-width: 75px;
-  }
-
-  .name {
-    padding: 50px 50px !important;
-  }
-
-  .title {
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    max-width: 250px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    z-index: 1 !important;
-    position: relative !important;
-    padding: 20px 10px !important;
-  }
-
   .btn-branding {
     text-align: center !important;
     float: none !important;
@@ -433,8 +366,49 @@ footer img:hover {
     line-height: 20px !important;
   }
 
+  .logo {
+    max-width: 75px;
+  }
+
+  .name {
+    padding: 50px 50px !important;
+  }
+
   .page-content {
     margin: 75px 60px !important;
+  }
+
+  .social-icon-group {
+    justify-content: center !important;
+    margin: 20px 0px !important;
+  }
+
+  .title {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1 !important;
+    position: relative !important;
+    padding: 20px 10px !important;
+  }
+
+  .work img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 351px) {
+  footer {
+    padding: 50px !important;
+    text-align: center !important;
+  }
+
+  footer .d-flex {
+    display: block !important;
   }
 
   h1 {
@@ -465,18 +439,45 @@ footer img:hover {
     padding-right: 25px !important;
   }
 
-  footer {
-    padding: 50px !important;
+  .btn-branding {
     text-align: center !important;
+    float: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
   }
 
-  footer .d-flex {
-    display: block !important;
+  .logo {
+    max-width: 75px;
+  }
+
+  .name {
+    padding: 50px 50px !important;
+  }
+
+  .page-content {
+    margin: 75px 60px !important;
   }
 
   .social-icon-group {
     justify-content: center !important;
     margin: 20px 0px !important;
+  }
+
+  .title {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    max-width: 250px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    z-index: 1 !important;
+    position: relative !important;
+    padding: 20px 10px !important;
   }
 
   .work img {
@@ -486,6 +487,11 @@ footer img:hover {
 }
 
 @media (max-width: 800px) and (min-width: 481px) {
+  footer {
+    padding: 50px !important;
+    display: block !important;
+  }
+
   h1 {
     font-size: 70px !important;
     line-height: 70px !important;
@@ -506,29 +512,26 @@ footer img:hover {
     line-height: 30px !important;
   }
 
-  .name {
-    padding: 75px 50px !important;
-  }
-
-  .title {
-    padding: 20px !important;
-    margin-bottom: -30px !important;
-  }
   .btn-branding {
     font-size: 16px !important;
+  }
+
+  .name {
+    padding: 75px 50px !important;
   }
 
   .page-content {
     margin: 75px 60px !important;
   }
 
-  footer {
-    padding: 50px !important;
-    display: block !important;
-  }
   .social-icon-group {
     justify-content: center !important;
     margin: 20px 0px !important;
+  }
+
+  .title {
+    padding: 20px !important;
+    margin-bottom: -30px !important;
   }
 
   .work img {
